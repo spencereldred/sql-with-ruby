@@ -35,7 +35,6 @@ describe SqlExercise do
     end
 
     it "can return three customers" do
-      skip
 
       expected_customers = [
         {
@@ -73,7 +72,6 @@ describe SqlExercise do
 
   describe "#order_customers" do
     it "can orders the customers in alphabetical order" do
-      skip
       alphabetical_customers = sql_exercise.order_customers("ASC")
 
       expect(alphabetical_customers.first["name"]).to eq("Coleman Prohaska Jr.")
@@ -81,7 +79,6 @@ describe SqlExercise do
     end
 
     it "can orders the customers in reverse alphabetical order" do
-      skip
       alphabetical_customers = sql_exercise.order_customers("DESC")
 
       expect(alphabetical_customers.first["name"]).to eq("Zelma Davis")
@@ -91,7 +88,6 @@ describe SqlExercise do
 
   describe "#id_and_name_for_customers" do
     it "returns only the id and name for each customer" do
-      skip
       customers = sql_exercise.id_and_name_for_customers
 
       expect(customers.length).to eq(10)
